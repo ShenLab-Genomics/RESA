@@ -1,0 +1,627 @@
+Start reading input files ......
+Start variant annotation......
+NOTICE: Finished reading 9329 lines from VCF file
+NOTICE: A total of 9084 locus in VCF file passed QC threshold, representing 8489 SNPs (6226 transitions and 2263 transversions) and 596 indels/substitutions
+NOTICE: Finished writing 8489 SNP genotypes (6226 transitions and 2263 transversions) and 596 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158684_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158684_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 9039 unique variants in 9039 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 3869 sequences
+WARNING: A total of 1363 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000301458.9#19#8302126 ENST00000389054.7#5#141515015 ENST00000598188.5#19#17267349)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158684_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158684_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 2986 unique variants in 2986 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 2455
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158684_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158684_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 625 unique variants in 625 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 602
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158684_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158684_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 581 unique variants in 581 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 7238 lines from VCF file
+NOTICE: A total of 6993 locus in VCF file passed QC threshold, representing 6596 SNPs (4730 transitions and 1866 transversions) and 399 indels/substitutions
+NOTICE: Finished writing 6596 SNP genotypes (4730 transitions and 1866 transversions) and 399 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158685_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158685_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 6925 unique variants in 6925 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 3555 sequences
+WARNING: A total of 1231 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000371984.7#1#46188682 ENST00000543927.5#22#50523567 ENST00000398559.6#3#69019826)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158685_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158685_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 2577 unique variants in 2577 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 2141
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158685_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158685_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 385 unique variants in 385 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 375
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158685_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158685_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 360 unique variants in 360 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 10009 lines from VCF file
+NOTICE: A total of 9764 locus in VCF file passed QC threshold, representing 9065 SNPs (6621 transitions and 2444 transversions) and 700 indels/substitutions
+NOTICE: Finished writing 9065 SNP genotypes (6621 transitions and 2444 transversions) and 700 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158686_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158686_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 9690 unique variants in 9690 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 4331 sequences
+WARNING: A total of 1442 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000221418.8#19#38815421 ENST00000436636.6#3#171061338 ENST00000336273.7#8#97644178)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158686_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158686_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3220 unique variants in 3220 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 2645
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158686_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158686_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 662 unique variants in 662 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 639
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158686_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158686_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 617 unique variants in 617 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 9954 lines from VCF file
+NOTICE: A total of 9709 locus in VCF file passed QC threshold, representing 9022 SNPs (6506 transitions and 2516 transversions) and 690 indels/substitutions
+NOTICE: Finished writing 9022 SNP genotypes (6506 transitions and 2516 transversions) and 690 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158687_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158687_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 9635 unique variants in 9635 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 4319 sequences
+WARNING: A total of 1450 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000346085.9#6#156777373 ENST00000395952.7#6#31686948 ENST00000396591.7#5#69093645)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158687_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158687_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3275 unique variants in 3275 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 2681
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158687_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158687_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 616 unique variants in 616 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 589
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158687_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158687_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 575 unique variants in 575 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 12253 lines from VCF file
+NOTICE: A total of 12008 locus in VCF file passed QC threshold, representing 11071 SNPs (7974 transitions and 3097 transversions) and 939 indels/substitutions
+NOTICE: Finished writing 11071 SNP genotypes (7974 transitions and 3097 transversions) and 939 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158688_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158688_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 11946 unique variants in 11946 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 5308 sequences
+WARNING: A total of 1813 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000320631.7#11#64851641 ENST00000373243.6#1#35557807 ENST00000232888.6#3#51933429)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158688_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158688_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 4075 unique variants in 4075 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3415
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158688_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158688_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 881 unique variants in 881 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 838
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158688_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158688_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 823 unique variants in 823 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 3553 lines from VCF file
+NOTICE: A total of 3308 locus in VCF file passed QC threshold, representing 3088 SNPs (1964 transitions and 1124 transversions) and 221 indels/substitutions
+NOTICE: Finished writing 3088 SNP genotypes (1964 transitions and 1124 transversions) and 221 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158753_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158753_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 3256 unique variants in 3256 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 1125 sequences
+WARNING: A total of 382 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000379161.4#13#44939248 ENST00000220584.8#8#11802610 ENST00000431843.6#11#405715)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158753_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158753_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 866 unique variants in 866 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 624
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158753_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158753_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 204 unique variants in 204 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 162
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158753_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158753_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 189 unique variants in 189 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 11358 lines from VCF file
+NOTICE: A total of 11113 locus in VCF file passed QC threshold, representing 10327 SNPs (7447 transitions and 2880 transversions) and 787 indels/substitutions
+NOTICE: Finished writing 10327 SNP genotypes (7447 transitions and 2880 transversions) and 787 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158754_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158754_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 11061 unique variants in 11061 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 4952 sequences
+WARNING: A total of 1693 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000267103.9#12#53299685 ENST00000422982.7#10#80155123 ENST00000268717.9#17#17246835)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158754_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158754_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3744 unique variants in 3744 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3152
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158754_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158754_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 638 unique variants in 638 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 618
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158754_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158754_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 595 unique variants in 595 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 14020 lines from VCF file
+NOTICE: A total of 13775 locus in VCF file passed QC threshold, representing 12586 SNPs (9003 transitions and 3583 transversions) and 1193 indels/substitutions
+NOTICE: Finished writing 12586 SNP genotypes (9003 transitions and 3583 transversions) and 1193 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158755_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158755_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 13715 unique variants in 13715 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 5117 sequences
+WARNING: A total of 1772 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000376112.3#20#31605282 ENST00000367053.5#1#207496156 ENST00000373589.8#X#72329516)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158755_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158755_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3990 unique variants in 3990 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3335
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158755_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158755_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 1042 unique variants in 1042 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 1013
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158755_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158755_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 977 unique variants in 977 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 1482 lines from VCF file
+NOTICE: A total of 1237 locus in VCF file passed QC threshold, representing 1201 SNPs (852 transitions and 349 transversions) and 36 indels/substitutions
+NOTICE: Finished writing 1201 SNP genotypes (852 transitions and 349 transversions) and 36 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158756_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158756_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 1203 unique variants in 1203 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 857 sequences
+WARNING: A total of 328 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000394957.7#10#71747558 ENST00000261735.3#12#112013315 ENST00000412585.6#6#31353871)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158756_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158756_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 648 unique variants in 648 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 490
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158756_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158756_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 52 unique variants in 52 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 49
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158756_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158756_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 46 unique variants in 46 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 12262 lines from VCF file
+NOTICE: A total of 12017 locus in VCF file passed QC threshold, representing 11199 SNPs (8003 transitions and 3196 transversions) and 819 indels/substitutions
+NOTICE: Finished writing 11199 SNP genotypes (8003 transitions and 3196 transversions) and 819 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158763_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158763_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 11974 unique variants in 11974 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 5560 sequences
+WARNING: A total of 1899 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000331925.6#17#81509970 ENST00000368147.8#1#158610705 ENST00000372838.8#9#128420479)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158763_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158763_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 4199 unique variants in 4199 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3517
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158763_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158763_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 881 unique variants in 881 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 848
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158763_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158763_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 829 unique variants in 829 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 9884 lines from VCF file
+NOTICE: A total of 9639 locus in VCF file passed QC threshold, representing 8901 SNPs (6359 transitions and 2542 transversions) and 739 indels/substitutions
+NOTICE: Finished writing 8901 SNP genotypes (6359 transitions and 2542 transversions) and 739 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158764_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158764_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 9584 unique variants in 9584 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 4248 sequences
+WARNING: A total of 1458 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000269980.6#19#41397459 ENST00000442241.8#17#35131346 ENST00000375147.7#9#97633625)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158764_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158764_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3070 unique variants in 3070 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 2588
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158764_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158764_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 507 unique variants in 507 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 490
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158764_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158764_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 477 unique variants in 477 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 12606 lines from VCF file
+NOTICE: A total of 12361 locus in VCF file passed QC threshold, representing 11377 SNPs (8147 transitions and 3230 transversions) and 988 indels/substitutions
+NOTICE: Finished writing 11377 SNP genotypes (8147 transitions and 3230 transversions) and 988 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158765_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158765_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 12318 unique variants in 12318 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 5272 sequences
+WARNING: A total of 1804 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000327435.10#2#3497360 ENST00000316218.11#3#123067069 ENST00000314167.8#4#849277)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158765_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158765_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3856 unique variants in 3856 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3239
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158765_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158765_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 576 unique variants in 576 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 556
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158765_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158765_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 541 unique variants in 541 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 11595 lines from VCF file
+NOTICE: A total of 11350 locus in VCF file passed QC threshold, representing 10449 SNPs (7452 transitions and 2997 transversions) and 903 indels/substitutions
+NOTICE: Finished writing 10449 SNP genotypes (7452 transitions and 2997 transversions) and 903 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158766_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158766_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 11286 unique variants in 11286 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 4979 sequences
+WARNING: A total of 1691 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000376753.8#1#11664123 ENST00000250124.10#17#7583646 ENST00000315758.9#7#76048066)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158766_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158766_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3625 unique variants in 3625 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3055
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158766_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158766_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 704 unique variants in 704 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 677
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158766_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158766_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 660 unique variants in 660 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 8709 lines from VCF file
+NOTICE: A total of 8464 locus in VCF file passed QC threshold, representing 7910 SNPs (5716 transitions and 2194 transversions) and 557 indels/substitutions
+NOTICE: Finished writing 7910 SNP genotypes (5716 transitions and 2194 transversions) and 557 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158767_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158767_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 8419 unique variants in 8419 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 4235 sequences
+WARNING: A total of 1438 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000265316.7#2#219209767 ENST00000402673.6#5#134601143 ENST00000254286.8#14#58200137)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158767_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158767_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3005 unique variants in 3005 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 2550
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158767_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158767_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 578 unique variants in 578 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 563
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158767_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158767_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 546 unique variants in 546 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 14676 lines from VCF file
+NOTICE: A total of 14431 locus in VCF file passed QC threshold, representing 13165 SNPs (9444 transitions and 3721 transversions) and 1272 indels/substitutions
+NOTICE: Finished writing 13165 SNP genotypes (9444 transitions and 3721 transversions) and 1272 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158768_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158768_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 14345 unique variants in 14345 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 5254 sequences
+WARNING: A total of 1878 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000218432.9#X#72181675 ENST00000361432.2#10#119104116 ENST00000216639.7#14#96797303)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158768_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158768_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 4230 unique variants in 4230 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3509
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158768_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158768_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 1006 unique variants in 1006 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 965
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158768_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158768_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 938 unique variants in 938 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 12588 lines from VCF file
+NOTICE: A total of 12343 locus in VCF file passed QC threshold, representing 11379 SNPs (8155 transitions and 3224 transversions) and 969 indels/substitutions
+NOTICE: Finished writing 11379 SNP genotypes (8155 transitions and 3224 transversions) and 969 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158769_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158769_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 12294 unique variants in 12294 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 5283 sequences
+WARNING: A total of 1844 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000441876.6#22#45309846 ENST00000262965.9#19#1609289 ENST00000336615.8#11#818901)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158769_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158769_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 4125 unique variants in 4125 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3415
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158769_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158769_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 773 unique variants in 773 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 739
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158769_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158769_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 716 unique variants in 716 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 9294 lines from VCF file
+NOTICE: A total of 9049 locus in VCF file passed QC threshold, representing 8361 SNPs (6025 transitions and 2336 transversions) and 690 indels/substitutions
+NOTICE: Finished writing 8361 SNP genotypes (6025 transitions and 2336 transversions) and 690 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158770_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158770_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 9003 unique variants in 9003 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 4131 sequences
+WARNING: A total of 1470 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000375094.3#6#32178353 ENST00000240851.8#3#100709424 ENST00000377044.8#9#71683365)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158770_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158770_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3107 unique variants in 3107 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 2578
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158770_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158770_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 585 unique variants in 585 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 565
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158770_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158770_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 543 unique variants in 543 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 13382 lines from VCF file
+NOTICE: A total of 13137 locus in VCF file passed QC threshold, representing 11826 SNPs (8408 transitions and 3418 transversions) and 1313 indels/substitutions
+NOTICE: Finished writing 11826 SNP genotypes (8408 transitions and 3418 transversions) and 1313 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158779_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158779_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 13068 unique variants in 13068 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 5235 sequences
+WARNING: A total of 1736 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000320580.8#11#66070453 ENST00000331314.10#1#200644038 ENST00000629913.2#3#48466655)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158779_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158779_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3915 unique variants in 3915 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3236
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158779_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158779_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 1113 unique variants in 1113 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 1061
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158779_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158779_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 1036 unique variants in 1036 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 10615 lines from VCF file
+NOTICE: A total of 10370 locus in VCF file passed QC threshold, representing 9497 SNPs (6823 transitions and 2674 transversions) and 874 indels/substitutions
+NOTICE: Finished writing 9497 SNP genotypes (6823 transitions and 2674 transversions) and 874 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158780_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158780_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 10324 unique variants in 10324 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 5054 sequences
+WARNING: A total of 1793 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000374859.2#6#32854160 ENST00000263035.8#10#12068971 ENST00000199448.8#7#37920560)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158780_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158780_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3793 unique variants in 3793 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3260
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158780_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158780_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 858 unique variants in 858 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 824
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158780_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158780_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 797 unique variants in 797 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 9864 lines from VCF file
+NOTICE: A total of 9619 locus in VCF file passed QC threshold, representing 9027 SNPs (6504 transitions and 2523 transversions) and 594 indels/substitutions
+NOTICE: Finished writing 9027 SNP genotypes (6504 transitions and 2523 transversions) and 594 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158781_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158781_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 9564 unique variants in 9564 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 4785 sequences
+WARNING: A total of 1679 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000374695.7#1#21822244 ENST00000302362.10#17#31851863 ENST00000263635.7#2#158968670)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158781_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158781_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3588 unique variants in 3588 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3052
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158781_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158781_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 493 unique variants in 493 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 481
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158781_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158781_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 452 unique variants in 452 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 11755 lines from VCF file
+NOTICE: A total of 11510 locus in VCF file passed QC threshold, representing 10758 SNPs (7749 transitions and 3009 transversions) and 753 indels/substitutions
+NOTICE: Finished writing 10758 SNP genotypes (7749 transitions and 3009 transversions) and 753 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158782_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158782_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 11432 unique variants in 11432 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 4747 sequences
+WARNING: A total of 1764 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000228251.8#12#10699212 ENST00000258145.7#12#64713448 ENST00000056233.3#7#26152239)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158782_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158782_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3649 unique variants in 3649 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3058
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158782_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158782_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 724 unique variants in 724 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 709
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158782_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158782_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 676 unique variants in 676 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 14875 lines from VCF file
+NOTICE: A total of 14630 locus in VCF file passed QC threshold, representing 13031 SNPs (9223 transitions and 3808 transversions) and 1602 indels/substitutions
+NOTICE: Finished writing 13031 SNP genotypes (9223 transitions and 3808 transversions) and 1602 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158783_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158783_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 14580 unique variants in 14580 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 5450 sequences
+WARNING: A total of 1779 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000402042.5#22#40410289 ENST00000254722.8#17#1761958 ENST00000209873.8#12#53307455)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158783_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158783_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 4045 unique variants in 4045 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 3378
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158783_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158783_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 1058 unique variants in 1058 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 1014
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158783_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158783_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 992 unique variants in 992 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 13170 lines from VCF file
+NOTICE: A total of 12925 locus in VCF file passed QC threshold, representing 11832 SNPs (8547 transitions and 3285 transversions) and 1096 indels/substitutions
+NOTICE: Finished writing 11832 SNP genotypes (8547 transitions and 3285 transversions) and 1096 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158784_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158784_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 12882 unique variants in 12882 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 4698 sequences
+WARNING: A total of 1544 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000336307.5#3#50292830 ENST00000225298.11#17#51260527 ENST00000339381.5#1#1331313)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158784_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158784_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 3423 unique variants in 3423 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 2834
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158784_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158784_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 714 unique variants in 714 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 681
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158784_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158784_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 660 unique variants in 660 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Start variant annotation......
+NOTICE: Finished reading 8267 lines from VCF file
+NOTICE: A total of 8022 locus in VCF file passed QC threshold, representing 7496 SNPs (5469 transitions and 2027 transversions) and 527 indels/substitutions
+NOTICE: Finished writing 7496 SNP genotypes (5469 transitions and 2027 transversions) and 527 indels/substitutions for 1 sample
+NOTICE: The --geneanno operation is set to ON by default
+NOTICE: Output files are written to ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158785_SET2_SMART-seq.variant_function, ../temp/SET2_SMART/folder_int_files/Input_annovar_ensGeneAnnot_SRR8158785_SET2_SMART-seq.exonic_variant_function
+NOTICE: Reading gene annotation from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGene.txt ... Done with 89732 transcripts (including 28806 without coding sequence annotation) for 42087 unique genes
+NOTICE: Processing next batch with 7964 unique variants in 7964 input lines
+NOTICE: Reading FASTA sequences from /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa ... Done with 3882 sequences
+WARNING: A total of 1329 sequences cannot be found in /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_ensGeneMrna.fa
+ (example: ENST00000226574.8#4#102501328 ENST00000342741.4#1#155290252 ENST00000508803.5#4#1871423)
+WARNING: A total of 385 sequences will be ignored due to lack of correct ORF annotation
+Start common SNP filter ......
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158785_SET2_SMART-seq.hg38_gnomad30_genome_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_gnomad_fil_SRR8158785_SET2_SMART-seq.hg38_gnomad30_genome_filtered
+NOTICE: Processing next batch with 2646 unique variants in 2646 input lines
+NOTICE: Database index loaded. Total number of bins is 2860873 and the number of bins to be scanned is 2301
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_gnomad30_genome.txt...Done
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158785_SET2_SMART-seq.hg38_avsnp147_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_dbsnp_fil_SRR8158785_SET2_SMART-seq.hg38_avsnp147_filtered
+NOTICE: Processing next batch with 455 unique variants in 455 input lines
+NOTICE: Database index loaded. Total number of bins is 27843692 and the number of bins to be scanned is 448
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_avsnp147.txt...Done
+NOTICE: the --dbtype generic is assumed to be in generic ANNOVAR database format
+NOTICE: Output file with variants matching filtering criteria is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158785_SET2_SMART-seq.hg38_generic_dropped, and output file with other variants is written to ../temp/SET2_SMART/folder_int_files/Filter_annovar_rnaedit_fil_SRR8158785_SET2_SMART-seq.hg38_generic_filtered
+NOTICE: Processing next batch with 422 unique variants in 422 input lines
+NOTICE: Scanning filter database /home/ns362/park_lab/Ning/software/annovar/humandb/hg38_RNAedit.txt...Done
+Testing overlap with 2nd caller ......
+Total number of variants passed QC is 6421
+Testing recurrence of variants ......
