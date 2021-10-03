@@ -12,6 +12,11 @@
 #
 # Written by Ning Shen
 # 2021-07-19
+# Edit on 8-10-21
+# Add output file containing hgFilter result
+# Add option for custom PON filter
+# 2021-08-17
+# Remove dbSNP filter because it contains some cancer driver mutations
 #########################################################################
 
 my $dir_var = $ARGV[0]; #Folder where inital gatk variant call and 2nd variant caller vcf files are stored
@@ -23,17 +28,17 @@ my $ref_genome = "hg38";
 my $dp_cut = $ARGV[4]; #3;
 my $recur_cut = $ARGV[5]; #3;
 my $recur_upper = $ARGV[6];
+my $custom_PON = $ARGV[7]; ##0 or 1
+my $file_PON = $ARGV[8]; ##optional: add custom PON file to filter out known SNPs or artifacts, .vcf.gz format
 
 my $dir_temp = "../temp/".$name."/"; #Folder for temporary files
 my $dir_inter = $dir_temp."folder_int_files";
 my $dir_conf = $dir_temp."folder_confident";
 my $dir_uns = $dir_temp."folder_unsure";
-my $dir_rm = $dir_temp."folder_remove";
 unless(-e $dir_temp){`mkdir $dir_temp`;}
 unless(-e $dir_inter){`mkdir $dir_inter`;}
 unless(-e $dir_conf){`mkdir $dir_conf`;}
 unless(-e $dir_uns){`mkdir $dir_uns`;}
-unless(-e $dir_rm){`mkdir $dir_rm`;}
 my $sample_name; 
 my $file_gatk; my $file_strelka;
 my $file_annovar_input; my $file_annovar_gene_header; my $file_annovar_gene; my $file_annovar_exonic; my $file_annovar_gnomad_fil_header; my $file_annovar_gnomad_fil; my $file_annovar_dbsnp_fil_header; my $file_annovar_dbsnp_fil; my $file_annovar_rnaedit_header; my $file_annovar_rnaedit_fil; 
@@ -41,6 +46,8 @@ my @arr_sample_names;
 my %class_dp_qc=(); my %class_df_qc=(); ##dp means double positive in both variant callers
 my %count_dp_qcp=(); my %count_df_qcf=();
 print "Start reading input files ......\n";
+$file_hqfilter = $dir_conf."/hqfilter_variants_all.txt";
+open(FHQ,">$file_hqfilter")||die;
 open(L1,"$file_list")||die;
 while(<L1>){
 	chomp;
@@ -52,6 +59,16 @@ while(<L1>){
 	unless(-e $file_gatk){
                 print "Cannot find variant vcf file $file_gatk\n";next;
         }
+	`bcftools index $file_gatk`;
+	if($custom_PON==1){
+		$dir_fil = $dir_inter."/PON_overlap_".$sample_name;
+		`bcftools isec -p $dir_fil $file_gatk $file_PON`;
+		$file_gatk = $dir_inter."/GATK_".$sample_name."_PONfiltered.vcf.gz";
+		$file_ponfil = $dir_fil."/0000.vcf";
+		`bgzip -c $file_ponfil > $file_gatk`;
+		`bcftools index $file_gatk`;
+	}
+
 	$file_strelka = $dir_var."variant_call_strelka/".$sample_name.".vcf.gz";
 	$file_var_strelka = $dir_inter."/Strelka_SNVs_".$sample_name;
 	`zcat $file_strelka | grep -v '^#' |grep '^chr' |grep -v '^chrM' |cut -f 1,2,3,4,5 > $file_var_strelka`;
@@ -100,13 +117,12 @@ print "Start common SNP filter ......\n";
 	$file_annovar_gnomad_fil_header = $dir_inter."/Filter_annovar_gnomad_fil_".$sample_name;
 	$file_annovar_gnomad_fil = $dir_inter."/Filter_annovar_gnomad_fil_".$sample_name.".hg38_gnomad30_genome_filtered";
 	`/home/ns362/park_lab/Ning/software/annovar/annotate_variation.pl -filter -dbtype gnomad30_genome -buildver hg38 -out $file_annovar_gnomad_fil_header $file_annovar_exonic /home/ns362/park_lab/Ning/software/annovar/humandb/`;
-	$file_annovar_dbsnp_fil_header = $dir_inter."/Filter_annovar_dbsnp_fil_".$sample_name;
-	$file_annovar_dbsnp_fil = $dir_inter."/Filter_annovar_dbsnp_fil_".$sample_name.".hg38_avsnp147_filtered";
-	`/home/ns362/park_lab/Ning/software/annovar/annotate_variation.pl -filter -dbtype avsnp147 -buildver hg38 -out $file_annovar_dbsnp_fil_header $file_annovar_gnomad_fil /home/ns362/park_lab/Ning/software/annovar/humandb/`;
+#	$file_annovar_dbsnp_fil_header = $dir_inter."/Filter_annovar_dbsnp_fil_".$sample_name;
+#	$file_annovar_dbsnp_fil = $dir_inter."/Filter_annovar_dbsnp_fil_".$sample_name.".hg38_avsnp147_filtered";
+#	`/home/ns362/park_lab/Ning/software/annovar/annotate_variation.pl -filter -dbtype avsnp147 -buildver hg38 -out $file_annovar_dbsnp_fil_header $file_annovar_gnomad_fil /home/ns362/park_lab/Ning/software/annovar/humandb/`;
 	$file_annovar_rnaedit_header = $dir_inter."/Filter_annovar_rnaedit_fil_".$sample_name;
 	$file_annovar_rnaedit_fil = $dir_inter."/Filter_annovar_rnaedit_fil_".$sample_name.".hg38_generic_filtered";
-	`/home/ns362/park_lab/Ning/software/annovar/annotate_variation.pl -filter -dbtype generic -genericdbfile hg38_RNAedit.txt -buildver hg38 -out $file_annovar_rnaedit_header $file_annovar_dbsnp_fil /home/ns362/park_lab/Ning/software/annovar/humandb/`;
-#	`/home/ns362/park_lab/Ning/software/annovar/annotate_variation.pl -filter -dbtype generic -genericdbfile hg38_RNAedit.txt -buildver hg38 -out $file_annovar_rnaedit_header $file_annovar_gnomad_fil /home/ns362/park_lab/Ning/software/annovar/humandb/`;
+	`/home/ns362/park_lab/Ning/software/annovar/annotate_variation.pl -filter -dbtype generic -genericdbfile hg38_RNAedit.txt -buildver hg38 -out $file_annovar_rnaedit_header $file_annovar_gnomad_fil /home/ns362/park_lab/Ning/software/annovar/humandb/`;
 
 print "Testing overlap with 2nd caller ......\n";
 	##Test for overlap with strelka (2nd) variant caller
@@ -162,6 +178,7 @@ print "Testing overlap with 2nd caller ......\n";
 					next;
 				}
 			}
+			print FHQ $sample_name,"\t",$_;
 			#print FDPP $_;need recurrence to pass
 #			push (@double_pos_test_recur, $_);
 #			$class_dp_qc{$sample_name}{$_} = 1; ## mark variants that passed qc
@@ -238,7 +255,6 @@ print "Testing overlap with 2nd caller ......\n";
 					next;
 				}
 			}
-			#print FDPP $_;need recurrence to pass
 #			push (@double_pos_test_recur, $_);
 #			$class_df_qc{$sample_name}{$_} = 1;	
 		}
