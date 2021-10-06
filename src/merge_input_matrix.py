@@ -50,3 +50,4 @@ def fileConvert(input_file,mutsig_file,label_number):
     result=result.drop(['ANN'],axis=1)
     return result
 
+input_f=pd.concat([positive,negative],axis=0)
