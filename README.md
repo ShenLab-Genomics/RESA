@@ -12,7 +12,9 @@ RESA detects somatic mutation with high precision directly from scRNA-seq data. 
 ## Installation
 ### Dependencies
 Perl (version >=5)
+
 R >= 3.4
+
 Python >= 3.4
 
 ### Install RESA
