@@ -17,7 +17,7 @@ R >= 3.4
 
 Python >=3.7
 
-Python Packages
+Python Packages:
 pandas>=1.3.0, rpy2 >=2.9.4, imblearn >= 0.8.0, argparse, sys, os, sklearn, numpy
 
 ### Install RESA
