@@ -31,10 +31,10 @@ pandas>=1.3.0, rpy2 >=2.9.4, imblearn >= 0.8.0, argparse, sys, os, sklearn, nump
 
 3. RESA-refine
 
-  RESA_refine.py \
-  -N ./Negative_file \
-  -P ./Positive_file \
-  -U ./Undefined_file \
-  -O dir_out/ \
+  RESA_refine.py 
+  -N ./Negative_file 
+  -P ./Positive_file 
+  -U ./Undefined_file 
+  -O dir_out/ 
   -S=True (default: True)
 
