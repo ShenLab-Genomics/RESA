@@ -28,6 +28,10 @@ Minimap2
 
 Strelka
 
+bcftools
+
+annovar
+
 ### Install RESA
 
 ## Running RESA
