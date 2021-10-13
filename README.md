@@ -33,7 +33,9 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
 ## Running RESA
 ### 1. Variant calling
 
-  Please refer to variant calling pipeline instructions for CTAT-mutation and Strelka. Note this step includes alignment and variant calling, and is memory intensive. Below is example code for a single cell sample.
+  This step applies standard reference alignment and variant calling pipelines developed by others. For each cell, two aligners and variant callers need to be applied. This step is memory intensive and time consuming. To allow more flexibility to make best use of the resource available on the user's side, this step is not incoporated in the RESA package. Please refer to variant calling pipeline instructions for CTAT-mutation and Strelka. 
+  
+  Here are example codes to run for a single cell sample:
   
       ctat_mutations --left sample1_1.fastq --right sample1_2.fastq --out_dir outdir/sample1 --threads=4
   
