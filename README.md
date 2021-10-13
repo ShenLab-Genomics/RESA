@@ -1,5 +1,5 @@
 # RESA: single cell Recurrently Expressed SNV Analysis
-Copyright:
+Copyright: MIT license.
 
 ## Summary
 RESA detects somatic mutation with high precision directly from scRNA-seq data. The key assumption of this method is that cancer cells evolve in a clonal manner and thus expressed somatic mutations have cross-cell recurrence, whereas the noise and artefacts are likely distributed randomly with small probability of recurrence across the cell population. RESA is composed of three main steps: initial variant calling, filtering and labeling, and modeling and refinement.
