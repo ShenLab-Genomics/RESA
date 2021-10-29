@@ -51,7 +51,7 @@
 	# RESA-filter
 	mkdir /workspace/RESA/examples/result/
 	cd /workspace/RESA/src
-	perl filter_and_label_v2.pl \
+	perl filter_and_label_v2_1.pl \
 	/workspace/RESA/examples/input/K562_primers/ \
 	/workspace/RESA/examples/result/ \
 	/workspace/RESA/examples/input/K562_primers/sample_list.txt K562_primers 3 3 42
