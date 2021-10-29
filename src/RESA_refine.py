@@ -301,7 +301,7 @@ pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'undefined.vcf',
 U.to_csv(args.O+'undefined.vcf',sep='\t',mode='a',index=False)
 
 #Rscript
-robjects.r.source(dir_sh+'/get_mutation_type_seq_context.R')
+robjects.r.source(dir_sh+'get_mutation_type_seq_context.R')
 robjects.r.anno(args.O+'/negative.vcf','negative',args.O)
 robjects.r.anno(args.O+'/postive.vcf','postive',args.O)
 robjects.r.anno(args.O+'/undefined.vcf','undefined',args.O)
@@ -338,6 +338,7 @@ if args.S == 'True':
     und_test = und_test.reset_index()
     und_B = und_test[['CHROM','POS','CELL','Mut_spec']]
     sc.Predict(und_test,m1,m2).to_csv(args.O+'prdicted_value.csv')
+    print('results have been saved in prdicted_value.csv')
 else: 
     sc = joint_Model(label,seq_cols,qual_cols,1/3)
     train_data,test_data = sc.dataset_split(data)
@@ -349,7 +350,7 @@ else:
     und_test = und_test.reset_index()
     und_B = und_test[['CHROM','POS','CELL','Mut_spec']]
     sc.Predict(und_test,m1,m2).to_csv(args.O+'prdicted_value.csv')
-
+    print('results have been saved in prdicted_value.csv')
 
 
 
