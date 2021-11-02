@@ -30,6 +30,39 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
 
 ### Install RESA
 
+  Before installing RESA, please registe on https://www.openbioinformatics.org/annovar/annovar_download_form.php to download ANNOVAR. 
+  To download and install RESA, use the commands.
+  
+      docker pull tianyunz/resa:latest
+      
+      docker run -it tianyunz/resa:latest /bin/bash
+      
+  The following steps are installing the ANNOVAR and downloading the default database used in the RESA package. The size of database gnomad30_genome is large,  and we suggest setting up the docker image size greater than 90G. 
+      
+      docker cp annovar.latest.tar.gz containerID:/bin/annovar.latest.tar.gz
+      
+      docker exec -it containerID /bin/bash
+      
+      tar -zxvf /bin/annovar.latest.tar.gz
+      
+      cd /bin/annovar/
+      
+      ./annotate_variation.pl -buildver hg38 -downdb -webfrom annovar gnomad30_genome humandb/
+      
+	    ./annotate_variation.pl -buildver hg38 -downdb -webfrom annovar avsnp147 ensGene/
+      
+	    ./annotate_variation.pl -buildver hg38 -downdb -webfrom annovar avsnp147 humandb/
+
+  hg38_RNAedit.txt cannot be downloaded directly from the ANNOVAR, we suggest a way to convert it from vcf file to the ANNOVAR readable database.
+  
+	  wget https://data.broadinstitute.org/Trinity/CTAT_RESOURCE_LIB/MUTATION_LIB_SUPPLEMENT/rna_editing/GRCh38.RNAediting.vcf.gz
+    
+	  sed -i '1,5d' GRCh38.RNAediting.vcf
+    
+	  awk '{print $1 "\t" $2 "\t" $2 "\t" $4 "\t" $5}' GRCh38.RNAediting.vcf > temp.txt 
+    
+	  sed '1i\#Chr\tStart\tEnd\tRef\tAlt' temp.txt > hg38_RNAedit.txt
+  
 ## Running RESA
 ### 1. Variant calling
 
@@ -49,8 +82,25 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
 ### 2. RESA-filter
 
       perl filter_and_label_v2.pl  INPUT_folder  RESULTs_folder  file_sample_list  sample_name  minDP  minRecur  maxRecur  PON_filter(optional)
+      
+  Here are the example codes using RESA-filter to filter example dataset.
+      
+      mkdir /bin/RESA/examples/result/
+      
+      perl /bin/RESA/src/filter_and_label_v2.pl \
+	    /bin/RESA/examples/input/K562_primers/ \
+	    /bin/RESA/examples/result/ \
+	    /bin/RESA/examples/input/K562_primers/list_samples_K562_primers.txt K562_primers 3 3 42
 
 ### 3. RESA-refine
 
       RESA_refine.py -N ./Negative_file -P ./Positive_file -U ./Undefined_file -O dir_out/ -S=True (default: True)
+  
+  Here are the example codes using RESA-refine to predict mutations of the example dataset. And predicted mutations have saved in prdicted_value.csv
+
+      python3.8 RESA_refine.py \
+	    -N /bin/RESA/examples/result/K562_primers/folder_confident/Double_neg_qualrecur_fail.txt \
+	    -P /bin/RESA/examples/result/K562_primers/folder_confident/Double_pos_qualrecur_pass.txt \
+	    -U /bin/RESA/examples/result/K562_primers/folder_unsure/Undefined_B.txt \
+	    -O /bin/RESA/examples/result/K562_primers/
 
