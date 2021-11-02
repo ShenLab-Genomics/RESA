@@ -53,7 +53,7 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
       
 	    ./annotate_variation.pl -buildver hg38 -downdb -webfrom annovar avsnp147 humandb/
 
-  hg38_RNAedit.txt cannot be downloaded directly from the ANNOVAR, we suggest a way to convert it from vcf file to the ANNOVAR readable database.
+  hg38_RNAedit.txt cannot be downloaded directly from the ANNOVAR, and here shows one way to convert it from vcf file to the ANNOVAR readable database.
   
 	  wget https://data.broadinstitute.org/Trinity/CTAT_RESOURCE_LIB/MUTATION_LIB_SUPPLEMENT/rna_editing/GRCh38.RNAediting.vcf.gz
     
