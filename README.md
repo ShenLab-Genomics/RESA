@@ -81,7 +81,7 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
 
 ### 2. RESA-filter
 
-      perl filter_and_label_v2.pl  INPUT_folder  RESULTs_folder  file_sample_list  sample_name  minDP  minRecur  maxRecur  PON_filter(optional)
+      perl filter_and_label.pl  INPUT_folder  RESULTs_folder  file_sample_list  sample_name  minDP  minRecur  maxRecur  PON_filter(0 or 1) PON_file(if PON_filter is 1)
       
   Here are the example codes using RESA-filter to filter example dataset.
       
