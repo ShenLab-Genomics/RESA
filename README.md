@@ -49,7 +49,7 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
       
       ./annotate_variation.pl -buildver hg38 -downdb -webfrom annovar gnomad30_genome humandb/
       
-	    ./annotate_variation.pl -buildver hg38 -downdb -webfrom annovar avsnp147 ensGene/
+	    ./annotate_variation.pl -buildver hg38 -downdb -webfrom annovar ensGene humandb/
       
 	    ./annotate_variation.pl -buildver hg38 -downdb -webfrom annovar avsnp147 humandb/
 
