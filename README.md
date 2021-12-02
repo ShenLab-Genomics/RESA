@@ -51,7 +51,6 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
       
 	    ./annotate_variation.pl -buildver hg38 -downdb -webfrom annovar ensGene humandb/
       
-	    ./annotate_variation.pl -buildver hg38 -downdb -webfrom annovar avsnp147 humandb/
 
   hg38_RNAedit.txt cannot be downloaded directly from the ANNOVAR, and here shows one way to convert it from vcf file to the ANNOVAR readable database.
   
@@ -94,7 +93,7 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
 
 ### 3. RESA-refine
 
-      RESA_refine.py -N ./Negative_file -P ./Positive_file -U ./Undefined_file -O dir_out/ -S=True (default: True)
+      python RESA_refine.py -N ./Negative_file -P ./Positive_file -U ./Undefined_file -O dir_out/ -S=True (default: True)
   
   Here are the example codes using RESA-refine to predict mutations of the example dataset. And predicted mutations have saved in prdicted_value.csv
 
