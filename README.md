@@ -6,7 +6,7 @@ RESA detects somatic mutation with high precision directly from scRNA-seq data. 
 
 
 ## RESA workflow
-![image](https://user-images.githubusercontent.com/8051136/136513663-8e0f5a8f-29d2-44d2-a7a4-5bed334c3124.png)
+![image](https://user-images.githubusercontent.com/8051136/145395647-fb5b8f15-eb64-46c8-b13d-5cc3412a3abc.png)
 
 
 ## Installation
