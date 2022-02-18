@@ -289,7 +289,7 @@ class joint_Model(object):
 
 N = fileConvert_PreR(args.N)
 pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'negative.vcf',
-                  sep='\t',mode='a',index=False,header=False)
+                  sep='\t',index=False,header=False)
 N.to_csv(args.O+'negative.vcf',sep='\t',mode='a',index=False)
 P = fileConvert_PreR(args.P)
 pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'postive.vcf',
@@ -297,11 +297,11 @@ pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'postive.vcf',
 P.to_csv(args.O+'postive.vcf',sep='\t',mode='a',index=False)
 U = fileConvert_PreR(args.U)
 pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'undefined.vcf',
-                  sep='\t',mode='a',index=False,header=False)
+                  sep='\t',index=False,header=False)
 U.to_csv(args.O+'undefined.vcf',sep='\t',mode='a',index=False)
 
 #Rscript
-robjects.r.source(dir_sh+'get_mutation_type_seq_context.R')
+robjects.r.source(dir_sh+'/get_mutation_type_seq_context.R')
 robjects.r.anno(args.O+'/negative.vcf','negative',args.O)
 robjects.r.anno(args.O+'/postive.vcf','postive',args.O)
 robjects.r.anno(args.O+'/undefined.vcf','undefined',args.O)
@@ -337,7 +337,7 @@ if args.S == 'True':
     und_test=pd.read_csv(args.O+'undefined.csv',index_col=0)
     und_test = und_test.reset_index()
     und_B = und_test[['CHROM','POS','CELL','Mut_spec']]
-    sc.Predict(und_test,m1,m2).to_csv(args.O+'prdicted_value.csv')
+    sc.Predict(und_test,m1,m2).to_csv(args.O+'predicted_value.csv')
     print('results have been saved in prdicted_value.csv')
 else: 
     sc = joint_Model(label,seq_cols,qual_cols,1/3)
@@ -349,8 +349,11 @@ else:
     und_test=pd.read_csv(args.O+'undefined.csv',index_col=0)
     und_test = und_test.reset_index()
     und_B = und_test[['CHROM','POS','CELL','Mut_spec']]
-    sc.Predict(und_test,m1,m2).to_csv(args.O+'prdicted_value.csv')
+    sc.Predict(und_test,m1,m2).to_csv(args.O+'predicted_value.csv')
     print('results have been saved in prdicted_value.csv')
+
+
+
 
 
 
