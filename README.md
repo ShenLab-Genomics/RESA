@@ -97,7 +97,7 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
   
   Here are the example codes using RESA-refine to predict mutations of the example dataset. And predicted mutations have saved in prdicted_value.csv
 
-      python3.8 RESA_refine.py \
+      python3.8 /bin/RESA/src/RESA_refine.py \
 	    -N /bin/RESA/examples/result/K562_primers/folder_confident/Double_neg_qualrecur_fail.txt \
 	    -P /bin/RESA/examples/result/K562_primers/folder_confident/Double_pos_qualrecur_pass.txt \
 	    -U /bin/RESA/examples/result/K562_primers/folder_unsure/Undefined_B.txt \
