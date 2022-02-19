@@ -86,7 +86,7 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
       
       mkdir /bin/RESA/examples/result/
       
-      perl /bin/RESA/src/filter_and_label_v2.pl \
+      perl /bin/RESA/src/filter_and_label.pl \
 	    /bin/RESA/examples/input/K562_primers/ \
 	    /bin/RESA/examples/result/ \
 	    /bin/RESA/examples/input/K562_primers/list_samples_K562_primers.txt K562_primers 3 3 42
