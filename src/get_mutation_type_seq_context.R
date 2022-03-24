@@ -22,12 +22,17 @@ library(BSgenome)
 library("BSgenome.Hsapiens.UCSC.hg38", character.only = TRUE)
 library(stringr)
 
+
 anno = function(vcf_file,sample_name,dir_out){
   ref_genome = "BSgenome.Hsapiens.UCSC.hg38"
-  vcf_file <- c(vcf_file) 
+  vcf_file <- c(vcf_file)
+  input <- readVcf(vcf_file)
+  input_df <- data.frame(row.names(input))
   vcfs = read_vcfs_as_granges(vcf_file, sample_name, ref_genome) 
 	type_context = type_context(vcfs[[1]],ref_genome)
 	out_matrix = data.frame("Variant"=names(vcfs[[1]]), "Mut_type"=type_context$types, "Seq_context"=type_context$context, "Mut_spec"= paste0(type_context$types, ".", type_context$context))
+	row.names(out_matrix)<-names(vcfs[[1]])
+	out_matrix<-out_matrix[input_df$row.names.input.,]
 	file_out = paste0(dir_out,sample_name[1])
 	write.table(out_matrix, file_out, sep="\t", quote=F, row.names=FALSE, col.names=TRUE)
 }
