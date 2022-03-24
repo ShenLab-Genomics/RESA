@@ -292,9 +292,9 @@ pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'negative.vcf',
                   sep='\t',index=False,header=False)
 N.to_csv(args.O+'negative.vcf',sep='\t',mode='a',index=False)
 P = fileConvert_PreR(args.P)
-pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'postive.vcf',
+pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'positive.vcf',
                   sep='\t',mode='a',index=False,header=False)
-P.to_csv(args.O+'postive.vcf',sep='\t',mode='a',index=False)
+P.to_csv(args.O+'positive.vcf',sep='\t',mode='a',index=False)
 U = fileConvert_PreR(args.U)
 pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'undefined.vcf',
                   sep='\t',index=False,header=False)
@@ -303,11 +303,11 @@ U.to_csv(args.O+'undefined.vcf',sep='\t',mode='a',index=False)
 #Rscript
 robjects.r.source(dir_sh+'/get_mutation_type_seq_context.R')
 robjects.r.anno(args.O+'/negative.vcf','negative',args.O)
-robjects.r.anno(args.O+'/postive.vcf','postive',args.O)
+robjects.r.anno(args.O+'/positive.vcf','postive',args.O)
 robjects.r.anno(args.O+'/undefined.vcf','undefined',args.O)
 
 N_file=fileConvert(args.N,args.O+'negative',0)
-P_file=fileConvert(args.P,args.O+'postive',1)
+P_file=fileConvert(args.P,args.O+'positive',1)
 input_matrix=pd.concat([P_file,N_file],axis=0)
 input_matrix.to_csv(args.O+'input_train.csv')
 
