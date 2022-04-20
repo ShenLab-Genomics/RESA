@@ -19,6 +19,7 @@ if (!requireNamespace("stringr", quietly = TRUE))
 
 library(MutationalPatterns)
 library(BSgenome)
+library(VariantAnnotation)
 library("BSgenome.Hsapiens.UCSC.hg38", character.only = TRUE)
 library(stringr)
 
