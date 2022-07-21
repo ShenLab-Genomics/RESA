@@ -14,6 +14,8 @@ if (!requireNamespace("BSgenome", quietly = TRUE))
   BiocManager::install("BSgenome")
 if (!requireNamespace("BSgenome.Hsapiens.UCSC.hg38", quietly = TRUE))
   BiocManager::install("BSgenome.Hsapiens.UCSC.hg38")
+if (!requireNamespace("VariantAnnotation", quietly = TRUE))
+  BiocManager::install("VariantAnnotation")
 if (!requireNamespace("stringr", quietly = TRUE))
   install.packages("stringr")
 
