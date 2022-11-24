@@ -303,7 +303,7 @@ U.to_csv(args.O+'undefined.vcf',sep='\t',mode='a',index=False)
 #Rscript
 robjects.r.source(dir_sh+'/get_mutation_type_seq_context.R')
 robjects.r.anno(args.O+'/negative.vcf','negative',args.O)
-robjects.r.anno(args.O+'/positive.vcf','postive',args.O)
+robjects.r.anno(args.O+'/positive.vcf','positive',args.O)
 robjects.r.anno(args.O+'/undefined.vcf','undefined',args.O)
 
 N_file=fileConvert(args.N,args.O+'negative',0)
