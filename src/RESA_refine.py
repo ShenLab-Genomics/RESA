@@ -18,7 +18,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score,roc_auc_score,precision_score,roc_curve
 from imblearn.over_sampling import RandomOverSampler
-
+from imblearn.under_sampling import RandomUnderSampler,TomekLinks,ClusterCentroids
+from imblearn.combine import SMOTEENN
 
 dir_sh = os.path.dirname(sys.argv[0])
 parser = argparse.ArgumentParser()
@@ -29,11 +30,12 @@ parser.add_argument('-O', type=str, help='Output dir')
 parser.add_argument('-S', type=str, help = 'Statistical summary',
                     default = 'True', 
                     choices=['True','False'])
+parser.add_argument('--Prob',type=float,help='Probability threshold of model',default=0.5)
 args = parser.parse_args()
 
 def fileConvert_PreR(input_file):
     with open (input_file,'r') as f:
-        file=pd.read_csv(f,sep='\t')
+        file=pd.read_csv(f,sep='\t', on_bad_lines='skip')
         if len(file.columns) != 16:
             print(input_file)
             sys.exit("Error: The matrix does not match the correct input file format.")
@@ -42,7 +44,7 @@ def fileConvert_PreR(input_file):
                 file=pd.read_csv(f,names=['CELL','CHROM','POS','POS1','REF','ALT',
                                   'CHROM2','POS2','STRAND','REF1','ALT1',
                                   'QUAL','ID1','INFO','FORMAT',
-                                  'GT:AD:DP:GQ:PL'],sep='\t')
+                                  'GT:AD:DP:GQ:PL'],sep='\t',low_memory=False,on_bad_lines='skip')
                 file['GT'] = file['GT:AD:DP:GQ:PL'].map(lambda x:x.split(':')[0])
                 file['AD'] = file['GT:AD:DP:GQ:PL'].map(lambda x:x.split(':')[1])
                 file['DP1'] = file['GT:AD:DP:GQ:PL'].map(lambda x:x.split(':')[2])
@@ -127,6 +129,8 @@ def fileConvert_Und(input_file,mutsig_file):
     info_data=info_data.drop(['DP'],axis=1)
     result=pd.concat([result, info_data], axis=1)
     return result
+
+
 
 class joint_Model(object):
     def __init__(self, label, seq_cols, qual_cols, test_size):
@@ -262,6 +266,7 @@ class joint_Model(object):
         list_cell=[]
         mut_spec=[]
         prob_list=[]
+        prb=[]
         for i in range(unsure_out.shape[0]): 
             if unsure_out['seq_pos'][i] >= 0.5:
                 a = unsure_out['seq_pos'][i] * 1
@@ -274,27 +279,35 @@ class joint_Model(object):
             prob = (a + b)/2  
             prob_list.append(prob)
         for j in range(len(prob_list)):
-            if prob_list[j] >= 0.5:
+            if prob_list[j] >= args.Prob:
                 list_chrom.append(unsure_out['CHROM'][j])
                 list_pos.append(unsure_out['POS'][j])
                 list_cell.append(unsure_out['CELL'][j])
                 mut_spec.append(unsure_out['Mut_spec'][j])
+                prb.append(prob_list[j])
         dict_out = {'CHROM':list_chrom,
                     'POS':list_pos,
                     'CELL':list_cell,
-                    'Mut_spec':mut_spec}                
+                    'Mut_spec':mut_spec,
+                    'Probability':prb}                
         result_out = pd.DataFrame(dict_out)
+        result_out = result_out.dropna(axis=0)
         return result_out
 
 
+print("Precessing the negative set...")
 N = fileConvert_PreR(args.N)
 pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'negative.vcf',
                   sep='\t',index=False,header=False)
 N.to_csv(args.O+'negative.vcf',sep='\t',mode='a',index=False)
+
+print("Precessing the positive set...")
 P = fileConvert_PreR(args.P)
 pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'positive.vcf',
                   sep='\t',mode='a',index=False,header=False)
 P.to_csv(args.O+'positive.vcf',sep='\t',mode='a',index=False)
+
+print("Precessing the unsure set...")
 U = fileConvert_PreR(args.U)
 pd.DataFrame(['##fileformat=VCFv4.2']).to_csv(args.O+'undefined.vcf',
                   sep='\t',index=False,header=False)
@@ -336,7 +349,6 @@ if args.S == 'True':
     summary.to_csv(args.O+'summary_info.txt',sep='\t',index=False)
     und_test=pd.read_csv(args.O+'undefined.csv',index_col=0)
     und_test = und_test.reset_index()
-    und_B = und_test[['CHROM','POS','CELL','Mut_spec']]
     sc.Predict(und_test,m1,m2).to_csv(args.O+'predicted_value.csv')
     print('results have been saved in prdicted_value.csv')
 else: 
@@ -348,9 +360,11 @@ else:
     sc.train_test(test_data,m1,m2)
     und_test=pd.read_csv(args.O+'undefined.csv',index_col=0)
     und_test = und_test.reset_index()
-    und_B = und_test[['CHROM','POS','CELL','Mut_spec']]
     sc.Predict(und_test,m1,m2).to_csv(args.O+'predicted_value.csv')
     print('results have been saved in prdicted_value.csv')
+
+
+
 
 
 
