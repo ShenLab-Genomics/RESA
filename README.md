@@ -94,7 +94,7 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
 
 ### 3. RESA-refine
 
-      python RESA_refine.py -N ./Negative_file -P ./Positive_file -U ./Undefined_file -O dir_out/ -S=True (default: True)
+      python RESA_refine.py -N ./Negative_file -P ./Positive_file -U ./Undefined_file -O dir_out/ -S=True (default: True) --Prob 0.5 (default value)
   
   Here are the example codes using RESA-refine to predict mutations of the example dataset. And predicted mutations have saved in prdicted_value.csv
 
@@ -103,4 +103,5 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
 	    -P /bin/RESA/examples/result/K562_primers/folder_confident/Double_pos_qualrecur_pass.txt \
 	    -U /bin/RESA/examples/result/K562_primers/folder_unsure/Undefined_B.txt \
 	    -O /bin/RESA/examples/result/K562_primers/
+	    --Prob 0.5
 
