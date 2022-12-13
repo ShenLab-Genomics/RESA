@@ -38,6 +38,7 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
       
       docker run -it tianyunz/resa:latest /bin/bash
       
+      This takes 20-25 mins to build
   The following steps are installing the ANNOVAR and downloading the default database used in the RESA package. The size of database gnomad30_genome is large,  and we suggest setting up the docker image size greater than 90G. 
       
       docker cp annovar.latest.tar.gz containerID:/bin/annovar.latest.tar.gz
@@ -92,6 +93,7 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
 	    /bin/RESA/examples/result/ \
 	    /bin/RESA/examples/input/K562_primers/list_samples_K562_primers.txt K562_primers 3 3 42
 
+	This takes 30-35 mins to run
 ### 3. RESA-refine
 
       python RESA_refine.py -N ./Negative_file -P ./Positive_file -U ./Undefined_file -O dir_out/ -S=True (default: True) --Prob 0.5 (default value)
@@ -105,3 +107,4 @@ Dependencies for step1: CTAT-mutation; Minimap2; Strelka
 	    -O /bin/RESA/examples/result/K562_primers/
 	    --Prob 0.5
 
+	This takes 10-15 mins to run
